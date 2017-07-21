@@ -1,0 +1,3 @@
+services:
+	evernote:
+		factory: XRuff\Evernote\Evernote(@session, @evernote.config)

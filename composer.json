@@ -1,0 +1,35 @@
+{
+	"name": "xruff/evernote",
+	"type": "library",
+	"description": "Nette extension for evernote PHP SDK.",
+	"keywords": ["nette", "evernote", "component"],
+	"license": ["BSD-3-Clause", "GPL-2.0", "GPL-3.0"],
+	"authors": [
+		{
+			"name": "Pavel Lauko"
+		}
+	],
+	"support": {
+		"issues": "https://github.com/XRuff/Evernote/issues"
+	},
+	"require": {
+		"nette/application": "~2.3",
+		"nette/utils": "~2.3",
+		"evernote/evernote-cloud-sdk-php": "^2.0"
+	},
+	"require-dev": {
+		"nette/tester": "~1.1.0",
+		"tracy/tracy": "2.3.*",
+		"vanio/coding-standards": "^0.1@dev"
+	},
+	"autoload": {
+		"psr-4": {
+			"XRuff\\Evernote\\": "src"
+		}
+	},
+	"minimum-stability": "dev",
+	"scripts": {
+		"lint": "\"vendor/bin/phpcs\" --standard=ruleset.xml --extensions=php --encoding=utf-8 --ignore=vendor .",
+		"fix": "\"vendor/bin/phpcbf\" --standard=ruleset.xml --extensions=php --encoding=utf-8 --no-patch --ignore=vendor ."
+	}
+}
